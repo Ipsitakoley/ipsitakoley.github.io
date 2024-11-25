@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ipsita Koley</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light off-white background */
+            color: #333; /* Dark gray text for better readability */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #e9ecef; /* Slightly darker off-white */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        header .left {
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 2px solid #dee2e6; /* Border to make the image pop */
+        }
+        header .contact-info {
+            font-size: 14px;
+            color: #495057; /* Medium gray text */
+        }
+        header .contact-info a {
+            color: #007bff; /* Blue links */
+            text-decoration: none;
+            margin-right: 10px;
+            transition: color 0.3s; /* Smoother transition for color change */
+        }
+        header .contact-info a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        header .right {
+            text-align: right;
+        }
+        header .right h1 {
+            margin: 0;
+            color: #212529; /* Darker gray for the name */
+        }
+        header .right p {
+            margin: 5px 0;
+            color: #495057; /* Medium gray for other details */
+        }
+        section {
+            padding: 20px;
+            background-color: #ffffff; /* White background for sections */
+            margin: 40px 0; /* Increased margin for more space */
+            border-radius: 8px; /* Rounded corners for sections */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 30px; /* Increased margin for more space */
+            color: #343a40; /* Dark gray for section titles */
+            text-align: center; /* Centered section titles */
+        }
+        .experience, .publication, .award {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .experience .duration, .publication .duration, .award .duration {
+            width: 30%;
+            color: #6c757d; /* Light gray for duration */
+        }
+        .experience .details, .publication .details, .award .details {
+            width: 65%;
+        }
+        .experience .details .subject, .academic .details .subject {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        a {
+            color: #007bff; /* Blue links */
+            text-decoration: none;
+            transition: color 0.3s; /* Smoother transition for color change */
+        }
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        .publication ul {
+            list-style: none;
+            padding: 0;
+        }
+        .publication ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px; /* Space for the custom marker */
+        }
+        .journal::before {
+            content: "■"; /* Red square marker */
+            color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .conference::before {
+            content: "●"; /* Green dot marker */
+            color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .book::before {
+            content: "◆"; /* Blue rhombus marker */
+            color: blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header .right {
+                text-align: left;
+                margin-top: 20px;
+            }
+            .experience, .publication, .award {
+                flex-direction: column;
+            }
+            .experience .duration, .publication .duration, .award .duration, 
+            .experience .details, .publication .details, .award .details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="left">
+        <img src="Ipsita_1_zoomed.jpg" alt="Photo of Ipsita">
+        <div class="contact-info">
+            <p>Email: <a href="ikipsita@gmail.com">ikipsita@gmail.com</a></p>
+            <!-- <p>Phone: <a href="tel:+919836109083">+919836109083</a></p> -->
+            <p>
+                <a href="https://scholar.google.com/citations?user=6DdAyy4AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
+                <a href="https://www.linkedin.com/in/ipsita-koley-380a9a20a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ipsitakoley" target="_blank"><i class="fab fa-github"></i></a>
+            </p>
+        </div>
+    </div>
+    <div class="right">
+        <h1>Ipsita Koley</h1>
+        <p>PhD in Computer Science</p>
+        <!-- <p>Date of Birth: January 1, 1990</p> -->
+    </div>
+</header>
+
+<section id="bio">
+    <h2 class="section-title"><a href="#bio">Brief Bio</a></h2>
+    <p>I am a Postdoctoral Researcher at GE Aerospace, India. I have completed Ph.D. from the Computer Science and Engineering Department at IIT Kharagpur. My primary research objective has been providing a holistic secure control framework for safety-critical cyber-physical systems that are resource-aware and performance-preserving. My research ventures span from vulnerability analysis and theoretical modeling of secure cyber-physical systems (CPSs) to their real-time realization on embedded platforms especially in the context of automotive CPS. My work has been published in several prestigious conferences and journals on real-time systems, like DATE, RTSS, ICCPS, CCS, RTAS, TCPS, etc. Before pursuing M.Tech and Ph.D., I have 3.5 years of experience in the software industry, primarily specializing in automation testing. I am actively looking for Postdoctoral Research position in academia or a faculty position. <a href="IpsitaKoley_CV.pdf" target="_blank">Find my resume here.</a></p>
+</section>
+
+<section id="industry-experience">
+    <h2 class="section-title"><a href="#industry-experience">Industry Experience</a></h2>
+    <div class="experience">
+        <div class="duration">Jun 2014 - Jul 2016</div>
+        <div class="details">
+            <span class="subject">Associate Software Engineer at RS Software India Ltd., Kolkata, India</span>
+            Worked on developing automtion test framework
+        </div>
+    </div>
+    <div class="experience">
+        <div class="duration">Feb 2016 - Dec 2017</div>
+        <div class="details">
+            <span class="subject">Assistant System Engineer at Tata Consultancy Services Ltd., Pune, India</span>
+            Worked on developing automtion test framework
+        </div>
+    </div>
+</section>
+
+<section id="academic-experience">
+    <h2 class="section-title"><a href="#academic-experience">Academic Experience</a></h2>
+    <div class="experience">
+        <div class="duration">Jul 2018 - Feb 2024</div>
+        <div class="details">
+            <span class="subject">Ph.D. Scholar at Indian Institute of Technology, Kharagpur</span>
+            Research in cyber-physical systems under the supervision of Dr. Soumyajit Dey.
+        </div>
+    </div>
+    <div class="experience">
+        <div class="duration">July 2016 - Jun 2018</div>
+        <div class="details">
+            <span class="subject">M.Tech in Information Technology at , Indian Institute of Engineering Science and Technology, Shibpur
+            </span>
+            Thesis on Mobile Sink-Based Data Collection for Energy Efficient
+            Coordination in Wireless Sensor Network Using Cooperative Game Model
+        </div>
+    </div>
+</section>
+
+<section id="publications">
+    <h2 class="section-title"><a href="#publications">Key Publications</a></h2>
+    <div class="publication">
+        <ul>
+            <li class="journal">Journals
+                <div class="duration">2024</div>
+                <div class="details">Adhikary, Sunandan, Ipsita Koley, Saurav Kumar Ghosh, Sumana Ghosh, and Soumyajit Dey. "Revisiting Dynamic Scheduling of Control Tasks: A Performance-Aware Fine-Grained Approach." IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems 43, no. 11 (2024): 3662-3673.</div>
+                <div class="duration">2023</div>
+                <div class="details">Koley, Ipsita, Soumyajit Dey, Debdeep Mukhopadhyay, Sachin Singh, Lavanya Lokesh, and Shantaram Vishwanath Ghotgalkar. "CAD Support for Security and Robustness Analysis of Safety-critical Automotive Software." ACM Transactions on Cyber-Physical Systems 7, no. 1 (2023): 1-26.</div>
+                <div class="duration">2019</div>
+                <div class="details">Koley, Ipsita, and Tuhina Samanta. "Mobile sink based data collection for energy efficient coordination in wireless sensor network using cooperative game model." Telecommunication Systems 71 (2019): 377-396.</div>
+            </li>
+            <li class="conference">Conference
+                <div class="duration">2023</div>
+                <div class="details">Koley, Ipsita, Sunandan Adhikary, and Soumyajit Dey. "Thinking Beyond Bus-off: Targeted Control Falsification in CAN." In 2024 ACM/IEEE 15th International Conference on Cyber-Physical Systems (ICCPS), pp. 33-44. IEEE, 2024.</div>
+                <div class="details">Maiti, Suman, Anjana Balabhaskara, Sunandan Adhikary, Ipsita Koley, and Soumyajit Dey. "Targeted attack synthesis for smart grid vulnerability analysis." In Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security, pp. 2576-2590. 2023.</div>
+                <div class="details">Koley, Ipsita, Sunandan Adhikary, Arkaprava Sain, and Soumyajit Dey. "Design and Deployment of Resilient Control Execution Patterns: A Prediction, Mitigation Approach." In Proceedings of the ACM/IEEE 14th International Conference on Cyber-Physical Systems (with CPS-IoT Week 2023), pp. 166-176. 2023.</div>
+                <div class="duration">2021</div>
+                <div class="details">Koley, Ipsita, Sunandan Adhikary, and Soumyajit Dey. "Catch me if you learn: Real-time attack detection and mitigation in learning enabled cps." In 2021 IEEE Real-Time Systems Symposium (RTSS), pp. 136-148. IEEE, 2021.</div>
+                <div class="duration">2020</div>
+                <div class="details">Adhikary, Sunandan, Ipsita Koley, Saurav Kumar Ghosh, Sumana Ghosh, Soumyajit Dey, and Debdeep Mukhopadhyay. "Skip to secure: Securing cyber-physical control loops with intentionally skipped executions." In Proceedings of the 2020 Joint Workshop on CPS&IoT Security and Privacy, pp. 81-86. 2020.</div> 
+                <div class="details">Kremer, Philipp, Ipsita Koley, Soumyajit Dey, and Sangyoung Park. "State estimation for attack detection in vehicle platoon using vanet and controller model." In 2020 IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC), pp. 1-8. IEEE, 2020.</div>
+                <div class="details">Koley, Ipsita, Saurav Kumar Ghosh, Soumyajit Dey, Debdeep Mukhopadhyay, Amogh Kashyap KN, Sachin Kumar Singh, Lavanya Lokesh, Jithin Nalu Purakkal, and Nishant Sinha. "Formal synthesis of monitoring and detection systems for secure cps implementations." In 2020 Design, Automation & Test in Europe Conference & Exhibition (DATE), pp. 314-317. IEEE, 2020.</div> 
+                
+            </li>
+            <li class="book">Book Chapter
+                <div class="duration">2023</div>
+                <div class="details">Dey, Soumyajit, Ipsita Koley, and Sunandan Adhikary. "Resource Aware Synthesis of Automotive Security Primitives." In Machine Learning and Optimization Techniques for Automotive Cyber-Physical Systems, pp. 189-224. Cham: Springer International Publishing, 2023.</div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="awards">
+    <h2 class="section-title"><a href="#awards">Awards & Achievements</a></h2>
+    <div class="award">
+        <div class="duration">2024</div>
+        <div class="details">Winner of 2024 ACM SIGBED Frank Anger Memorial Award</div>
+    </div>
+    <div class="award">
+        <div class="duration">2022</div>
+        <div class="details">Secured 1st runner-up position in Ph.D. forum organized by IEEE WINTECHCON</div>
+    </div>
+</section>
+
+</body>
+</html>
